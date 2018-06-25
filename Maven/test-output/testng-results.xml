@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-06-25T04:33:40Z" name="Default suite" finished-at="2018-06-25T04:35:00Z" duration-ms="79805">
+    <groups>
+    </groups>
+    <test started-at="2018-06-25T04:33:40Z" name="Default test" finished-at="2018-06-25T04:35:00Z" duration-ms="79805">
+      <class name="Login.LoginTest">
+        <test-method is-config="true" signature="browser()[pri:0, instance:Login.LoginTest@3cc1435c]" started-at="2018-06-25T04:33:40Z" name="browser" finished-at="2018-06-25T04:34:27Z" duration-ms="46908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method signature="login()[pri:0, instance:Login.LoginTest@3cc1435c]" started-at="2018-06-25T04:34:27Z" name="login" finished-at="2018-06-25T04:35:00Z" duration-ms="32726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Login.LoginTest@3cc1435c]" started-at="2018-06-25T04:35:00Z" name="afterTest" finished-at="2018-06-25T04:35:00Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Login.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
