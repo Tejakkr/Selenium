@@ -31,7 +31,9 @@ public class Elixir_loginTest {
 	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_state\"]")).clear();
 	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_state\"]")).sendKeys("Andhra Pradesh");
 	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_phone\"]")).clear();
-	  driver.findElement(By.xpath("//*[@id="Hospitalregistration_phone\"]")).sendKeys("1234567890");
+	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_phone\"]")).sendKeys("1234567890");
+	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_email\"]")).clear();
+	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_email\"]")).sendKeys("tehme783@gmail.com");
   }
    
 
