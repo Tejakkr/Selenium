@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 
 @Test
-public class LoginTest {
+public class Elixir_loginTest {
 	
 	WebDriver driver;
   public void login() {
@@ -25,10 +25,17 @@ public class LoginTest {
 	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_hospitalname\"]")).sendKeys("medplus");
 	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_address\"]")).clear();
 	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_address\"]")).sendKeys("Mutyalapalem");
-	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_yearofestablishment\"]")).
-	  driver.findElement(arg0)
+	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_yearofestablishment\"]")).sendKeys("1991");
+	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_country\"]")).clear();
+	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_country\"]")).sendKeys("India");
+	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_state\"]")).clear();
+	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_state\"]")).sendKeys("Andhra Pradesh");
+	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_phone\"]")).clear();
+	  driver.findElement(By.xpath("//*[@id="Hospitalregistration_phone\"]")).sendKeys("1234567890");
   }
-  @BeforeTest
+   
+
+@BeforeTest
   public void browser() {
 	  System.setProperty("webdriver.chrome.driver","C://Selenium//chromedriver_win32//chromedriver.exe");
 	   driver=new ChromeDriver();
