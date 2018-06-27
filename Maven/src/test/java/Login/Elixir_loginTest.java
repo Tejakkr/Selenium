@@ -17,6 +17,7 @@ public class Elixir_loginTest {
 	  driver.findElement(By.id("UserLogin_password")).sendKeys("admin");
 	  driver.findElement(By.xpath("/html/body/div[3]/div/div/div/div[2]/form/div[4]/input")).click();
 	  driver.manage().window().maximize();
+	  //hospital registration
 	  driver.findElement(By.xpath("/html/body/div[3]/div/div[1]/div/div/div[3]/ul/li[3]/a")).click();
 	  driver.findElement(By.xpath("//a[@href='/index.php/core/hospitalregistration/create']")).click();
 	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_hospital_code\"]")).clear();
@@ -34,6 +35,13 @@ public class Elixir_loginTest {
 	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_phone\"]")).sendKeys("1234567890");
 	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_email\"]")).clear();
 	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_email\"]")).sendKeys("tehme783@gmail.com");
+	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_fax\"]")).clear();
+	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_fax\"]")).sendKeys("221153");
+	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_noofbuildings\"]")).clear();
+	  driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_noofbuildings\"]")).sendKeys("8");
+	  //driver.findElement(By.xpath("//*[@id=\"Hospitalregistration_logo\"]")).click();
+	  driver.findElement(By.xpath("//*[@id=\"hospitalregistration-form\"]/div[2]/div/div[2]/div[7]/button")).click();
+	  
   }
    
 
@@ -47,6 +55,8 @@ public class Elixir_loginTest {
   @AfterTest
   public void afterTest() {
 	  //driver.quit();
+	  driver.findElement(By.xpath("//*[@id=\"navbar-mobile\"]/ul[2]/li/a/i")).click();
+	  driver.findElement(By.xpath("//*[@id=\"navbar-mobile\"]/ul[2]/li/a/i")).click();
   }
 
 }
